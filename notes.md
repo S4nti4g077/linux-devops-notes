@@ -29,9 +29,14 @@ typy komend:
 * an alias
 
   
-**which** - lokalizuje komende
-**xdg-open** - otwiera graficznego eksplorera plików dla np root (xdg-open /) /root ~home
-**pwd** - wyświetla aktualną lokalizację np (/home/santi)
-**ls** - wyświetla zawartość lokalizacji
-**touch** - tworzy nowy plik
+**which** - lokalizuje komende 
+
+**xdg-open** - otwiera graficznego eksplorera plików dla np root (xdg-open /) /root ~home 
+
+**pwd** - wyświetla aktualną lokalizację np (/home/santi) 
+
+**ls** - wyświetla zawartość lokalizacji 
+
+**touch** - tworzy nowy plik 
+
 ###
