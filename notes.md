@@ -9,7 +9,7 @@ https://ubuntu.com/download/desktop
 https://www.virtualbox.org/wiki/Downloads
 
 ## 📁 Dzień 2 – Podstawy komend
-*man* ncal - wyświetli co robi komenda, opis oraz listę opcji
+*man* ncal - wyświetli co robi komenda, opis oraz listę opcji (spacja przewija pełną stronę w terminalu)
 
 ### 🧪 Mini ćwiczenie
 ```bash
