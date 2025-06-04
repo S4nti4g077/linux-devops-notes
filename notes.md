@@ -10,6 +10,11 @@ https://www.virtualbox.org/wiki/Downloads
 
 ## 📁 Dzień 2 – Podstawy komend
 *man* ncal - wyświetli co robi komenda, opis oraz listę opcji (spacja przewija pełną stronę w terminalu)
+w help:
+opcje  [ ] - są to opcje niekonieczne (nie trzeba ich podać)
+opcje bez [ ] - są to opcje konieczne - trzeba je podać
+opcje z ... - można podać ich wiele
+
 
 ### 🧪 Mini ćwiczenie
 ```bash
