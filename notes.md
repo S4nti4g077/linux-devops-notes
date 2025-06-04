@@ -15,6 +15,7 @@ opcje  [ ] - są to opcje niekonieczne (nie trzeba ich podać)
 opcje bez [ ] - są to opcje konieczne - trzeba je podać
 opcje z ... - można podać ich wiele
 
+man man - wyświetli opcje dla manuala 
 
 ### 🧪 Mini ćwiczenie
 ```bash
