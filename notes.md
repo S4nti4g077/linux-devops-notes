@@ -30,5 +30,5 @@ typy komend:
 
   
 **which** - lokalizuje komende
-
+**xdg-open** - otwiera graficznego eksplorera plików dla np root (xdg-open /)
 ### 🧪 Mini ćwiczenie
