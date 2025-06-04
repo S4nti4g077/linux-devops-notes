@@ -17,7 +17,7 @@ opcje  [ ] - są to opcje niekonieczne (nie trzeba ich podać)
 opcje bez [ ] - są to opcje konieczne - trzeba je podać
 opcje z ... - można podać ich wiele
 
-**man man **- wyświetli opcje dla manuala 
+**man man** wyświetli opcje dla manuala 
 
 ## 📁 Dzień 3 –  komendy
 
@@ -30,5 +30,8 @@ typy komend:
 
   
 **which** - lokalizuje komende
-**xdg-open** - otwiera graficznego eksplorera plików dla np root (xdg-open /)
-### 🧪 Mini ćwiczenie
+**xdg-open** - otwiera graficznego eksplorera plików dla np root (xdg-open /) /root ~home
+**pwd** - wyświetla aktualną lokalizację np (/home/santi)
+**ls** - wyświetla zawartość lokalizacji
+**touch** - tworzy nowy plik
+###
