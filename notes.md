@@ -17,9 +17,15 @@ opcje z ... - można podać ich wiele
 
 man man - wyświetli opcje dla manuala 
 
+## 📁 Dzień 3 –  komendy
+
+typy komend: 
+* executable program /bin, /usr/bin, /usr/local/bin - binary files
+* built-in shell command - part of the shell
+* shell function
+* an alias
+
+  
+which - lokalizuje komende
+
 ### 🧪 Mini ćwiczenie
-```bash
-mkdir test
-cd test
-touch plik.txt
-ls -la
