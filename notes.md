@@ -8,11 +8,8 @@ Podstawowe narzędzia:
 https://ubuntu.com/download/desktop
 https://www.virtualbox.org/wiki/Downloads
 
-- `pwd` – pokazuje bieżącą ścieżkę
-- `ls -la` – pokazuje zawartość katalogu, także ukryte pliki
-- `cd ..` – cofnięcie do katalogu nadrzędnego
-- `touch nazwa.txt` – tworzy pusty plik
-- `mkdir folder` – tworzy katalog
+## 📁 Dzień 2 – Podstawy komend
+*man* ncal - wyświetli co robi komenda, opis oraz listę opcji
 
 ### 🧪 Mini ćwiczenie
 ```bash
