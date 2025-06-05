@@ -41,5 +41,6 @@ typy komend:
 
 **nano 'plik'** - otwiera plik w celu edycji albo go tworzy - ta sama komenda z nowym plikiem np. nano list.txt
 
-**rm** - usuwa pliki bezpowrotnie
+**rm** - usuwa pliki bezpowrotnie, (-d usuwa puste foldery, -r usuwa wszystko razem z folderem) 
+**rmdir** - usuwa puste foldery 
 
