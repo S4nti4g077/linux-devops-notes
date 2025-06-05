@@ -44,3 +44,18 @@ typy komend:
 **rm** - usuwa pliki bezpowrotnie, (-d usuwa puste foldery, -r usuwa wszystko razem z folderem) 
 **rmdir** - usuwa puste foldery 
 
+**mv plik [source] [destination]** - przenosi folderyq ; a w plikach zmienia nazwe - przenosi plik z dobby.txt do tools.txt
+
+**cp <source><destination>** - kopiuje 
+
+**history** - pokazuje historie komend z numerami **!numer** - wykonuje komende z historii
+
+## 📁 4 –  przydatne skróty klawiszowe
+
+**ctrl-L** - clear - czyści terminal
+
+**ctrl-a i ctrl-e** - przeskakuje kursor na początek / koniec
+
+**alt-f i alt-b** - przeskakuje kursor 1 słowo w przód / tył
+
+**ctrl-k ctrl-u** usuwa wszystko co za / przed kursorem
