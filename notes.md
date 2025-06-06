@@ -50,6 +50,16 @@ typy komend:
 
 **history** - pokazuje historie komend z numerami **!numer** - wykonuje komende z historii
 
+**cat** - czyta zawartość pliku lub kilku plików (pokazuje zawartość) CAŁĄ OD RAZU
+
+**less** - pokazuje zawartość pliku ale tylko po 1 stronie (jak plik jest duży to lepsza opcja)
+
+**tac** - pokazuje zawartość pliku ale od ostatniej do pierwszej linijki (odwraca kolejność)
+
+**rev** - Pokazuje zawartość pliku ale każde słowo jest odwrócone np (black -> kcalb)
+
+**head / tail** - pokazuje zawartość pierwszych / ostatnich 10 (domyślnie 10 albo więcej jak wpiszemy N) linijek w pliku [ **-f** jest opcją która "słucha" zmian pliku i pokazuje cały czas ostatnie 10, jest to użyteczne do czytania logów] 
+
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
