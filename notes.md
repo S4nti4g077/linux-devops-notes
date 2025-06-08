@@ -62,6 +62,8 @@ typy komend:
 
 **wc** - pokazuje liczbę: linii, słów, byte'ów
 
+**sort** - sortuje alfabetycznie (albo -r odwrotnie) / liczby sortuje po pierwszej cyfrze (chyba że -n , wtedy posortuje liczby rosnąco), fajną opcją sortowania, jak jest kilka kolumn danych, jest opcja -k (np -nk2 - posortuje numerycznie po kolumnie 2) 
+
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
@@ -71,3 +73,7 @@ typy komend:
 **alt-f i alt-b** - przeskakuje kursor 1 słowo w przód / tył
 
 **ctrl-k ctrl-u** usuwa wszystko co za / przed kursorem
+
+## 📁 5 –  REDIRECTION
+
+**>** - jeśli chcemy przekierować output danej komendy gdzieś indziej - np echo 'moo' > krowa.txt (wtedy w krowa.txt nadpisze się cały plik z wynikiem tej komendy) **>>** za to dopisze do pliku, a nie nadpisze całość.
