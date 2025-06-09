@@ -77,3 +77,11 @@ typy komend:
 ## 📁 5 –  REDIRECTION
 
 **>** - jeśli chcemy przekierować output danej komendy gdzieś indziej - np echo 'moo' > krowa.txt (wtedy w krowa.txt nadpisze się cały plik z wynikiem tej komendy) **>>** za to dopisze do pliku, a nie nadpisze całość.
+
+**<** - przekierowuje plik 'zróbto.txt' do komendy np. cat < kurczaki.txt ; komenda słucha polecenia w pliku np .txt
+
+**coś < coś innego > jeszce coś** - COMBO - input i output są przekierowane w tym samym czasie np cat < original.txt > output.txt (original.txt wyśle dane do komendy cat, a wynik będzie zapisany w output.txt)
+
+**2>** - error redirection - przekierowuje potencjalny błąd gdzieś - np cat idontexist 2> errorlog.txt - będzie zapisywał błędy w errorlog.txt
+
+**cat bees.txt ants.txt > insects.txt 2> error.txt** , a fancy opis jeśli chcemy error i output w tym samym miejscu **ls docs > output.txt 2>&1** a nowsze wersje basha obsługują komende **ls docs &> output.txt**, co też wyrzuci i błąd i wynik do output.txt
