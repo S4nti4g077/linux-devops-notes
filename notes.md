@@ -64,6 +64,8 @@ typy komend:
 
 **sort** - sortuje alfabetycznie (albo -r odwrotnie) / liczby sortuje po pierwszej cyfrze (chyba że -n , wtedy posortuje liczby rosnąco), fajną opcją sortowania, jak jest kilka kolumn danych, jest opcja -k (np -nk2 - posortuje numerycznie po kolumnie 2) 
 
+**tr** - tłumaczy albo usuwa znaki. Komenda potrzebuje standard input i wyrzuca do standard output. np. cat msg | tr a-z A-Z (zamieni zawartość pliku msg na duże litery) albo np **cat data.txt | tr -d a** usunie litery a
+
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
@@ -85,3 +87,9 @@ typy komend:
 **2>** - error redirection - przekierowuje potencjalny błąd gdzieś - np cat idontexist 2> errorlog.txt - będzie zapisywał błędy w errorlog.txt
 
 **cat bees.txt ants.txt > insects.txt 2> error.txt** , a fancy opis jeśli chcemy error i output w tym samym miejscu **ls docs > output.txt 2>&1** a nowsze wersje basha obsługują komende **ls docs &> output.txt**, co też wyrzuci i błąd i wynik do output.txt
+
+## 📁 6 - Piping
+
+Przepuszczanie jednej komendy przez drugą np, **date | rev** - wyświetli odwróconą datę, są to 2 komendy. Przydatne do np: **ls /usr/bin -l | less** wyświetli pliki w bin, ale nie wszystkie na raz tylko po 1 stronie
+
+**> vs |** - różnica polega na pliku - w **>** wynik zapisywany jest w pliku, a w **|** wynik jednej komendy jest przekazywany do następnej, nie ma żadnego pliku, za to możemy je połączyć
