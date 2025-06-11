@@ -99,4 +99,19 @@ Przepuszczanie jednej komendy przez drugą np, **date | rev** - wyświetli odwr�
 **tee** - są komendy, które potrzebują standard input, a chcemy użyć ich po danej komendzie albo chcemy zachować oba wyniki - wtedy używamy tee  np. **command1 | tee file.txt | command2** - command1 zapisze do pliku file.txt, a command2 wyrzuci w terminalu.
 (du -ha /usr/bin | sort -h |tee sorted.txt| tail -3 ) wykona po kolei sortowanie (po drodze stworzy plik sorted.txt z tymi danymi ale przejdzie dalej i wyświetli w terminalu dopiero po tail -3 (czyli 3 ostatnie). Ta komenda tworzy plik z danymi "po drodze" do finalnego wyniku w terminalu
 
+## 📁 6 –  EXPANSION
 
+'*' - oznacza cokolwiek np *.css albo w ogóle *
+
+'?' - oznacza nieznany 1 znak np cats.??? albo cat?.css albo *.???
+
+'[]' - oznacza zakresy - np [a-z] ; [0-9] ; 
+
+'[^]' - not match np [^1-9] poza liczbami 1-9 albo [^a-z] - poza małymi literami ; [^CcPpDd] 
+
+'{}' - przy tworzeniu plików pozwala na wielokrotne pliki z różnymi nazwami - np touch {mon, tue, wed, thu, fri}_planner.txt - utworzy 5 plików z końcówką _planner. Tworzy stringi w komendach i również kombinacje np touch {mon, tue, wed, thu, fri}_{am, pm}_planner.txt - utworzy 10 plików (każdą możliwą kombinację). Możliwość również {1..365} - utworzy 365 plików ; {a..e} - utworzy od a do e.
+Ciekawy przykład: chcemy utworzyć ścieżkę folderów więc: **mkdir -p {mon,tue,wed,thu,fri}/{breakfast,lunch,dinner}** - utworzy skomplikowaną strukturę folderów jednym wierszem
+
+'$' - wykonuje matematyke np. echo $((10+7)) -> wyrzuci 17, ale wynik jest zawsze w liczbach całkowitych - np 10/3 = 3
+
+'' i "" - różnica jest w wykonywaniu poleceń np. echo 'today is $(date)' nie wykona polecenia i wyświetli wszystko a echo "today is $(date)" wyświetli napis i datę dzisiejszą
