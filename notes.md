@@ -66,6 +66,8 @@ typy komend:
 
 **tr** - tłumaczy albo usuwa znaki. Komenda potrzebuje standard input i wyrzuca do standard output. np. cat msg | tr a-z A-Z (zamieni zawartość pliku msg na duże litery) albo np **cat data.txt | tr -d a** usunie litery a
 
+**wc** - liczy ilość słów - word count
+
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
@@ -93,3 +95,8 @@ typy komend:
 Przepuszczanie jednej komendy przez drugą np, **date | rev** - wyświetli odwróconą datę, są to 2 komendy. Przydatne do np: **ls /usr/bin -l | less** wyświetli pliki w bin, ale nie wszystkie na raz tylko po 1 stronie
 
 **> vs |** - różnica polega na pliku - w **>** wynik zapisywany jest w pliku, a w **|** wynik jednej komendy jest przekazywany do następnej, nie ma żadnego pliku, za to możemy je połączyć
+
+**tee** - są komendy, które potrzebują standard input, a chcemy użyć ich po danej komendzie albo chcemy zachować oba wyniki - wtedy używamy tee  np. **command1 | tee file.txt | command2** - command1 zapisze do pliku file.txt, a command2 wyrzuci w terminalu.
+(du -ha /usr/bin | sort -h |tee sorted.txt| tail -3 ) wykona po kolei sortowanie (po drodze stworzy plik sorted.txt z tymi danymi ale przejdzie dalej i wyświetli w terminalu dopiero po tail -3 (czyli 3 ostatnie). Ta komenda tworzy plik z danymi "po drodze" do finalnego wyniku w terminalu
+
+
