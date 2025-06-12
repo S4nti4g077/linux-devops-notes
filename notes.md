@@ -68,6 +68,10 @@ typy komend:
 
 **wc** - liczy ilość słów - word count
 
+**locate** - lokalizuje plik na komputerze np locate monday.txt
+
+**find** - pokazuje pełne ścieżki (ls pokazuje dane pliki i foldery, a find całą ich zawartość) (-type f -ograniczy szukanie do plików) (-type -d - ograniczy szukanie do folderów) **(find ~/Desktop -iname "*.txt")** - wyszuka od pulpitu pliki .txt ale -iname jest niezależny od wielkości liter
+
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
