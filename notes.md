@@ -115,3 +115,9 @@ Ciekawy przykład: chcemy utworzyć ścieżkę folderów więc: **mkdir -p {mon,
 '$' - wykonuje matematyke np. echo $((10+7)) -> wyrzuci 17, ale wynik jest zawsze w liczbach całkowitych - np 10/3 = 3
 
 '' i "" - różnica jest w wykonywaniu poleceń np. echo 'today is $(date)' nie wykona polecenia i wyświetli wszystko a echo "today is $(date)" wyświetli napis i datę dzisiejszą
+
+**Komendy do dużej sieci folderów i plików: mkdir -p Year/{winter,spring,summer,fall}/{yard,house}**
+
+**touch {winter,spring,summer,fall}/{yard,house}/{todos.txt,done.txt}**
+
+
