@@ -37,7 +37,7 @@ typy komend:
 
 **ls** - wyświetla zawartość lokalizacji 
 
-**touch** - tworzy nowy plik 
+**touch** - tworzy nowy plik (można utworzyć plik z datą modyfikacji zaległą - **touch last_week -d "1 week ago"**)
 
 **nano 'plik'** - otwiera plik w celu edycji albo go tworzy - ta sama komenda z nowym plikiem np. nano list.txt
 
@@ -71,6 +71,9 @@ typy komend:
 **locate** - lokalizuje plik na komputerze np locate monday.txt
 
 **find** - pokazuje pełne ścieżki (ls pokazuje dane pliki i foldery, a find całą ich zawartość) (-type f -ograniczy szukanie do plików) (-type -d - ograniczy szukanie do folderów) **(find ~/Desktop -iname "*.txt")** - wyszuka od pulpitu pliki .txt ale -iname jest niezależny od wielkości liter
+**find -size +5G** wyszuka plików > 5GB **find -user santi** - wyszuka plików po userze
+Wyszukiwanie przez **timestamp** - mtime (data modyfikacji - kiedy była zmiana w pliku) ctime (change time - kiedy była jakakolwiek zmiana - lokalizacji, nazwy itp) atime (access time - kiedy w jakikolwiek sposób plik był odczytany przez program lub komendą)
+<find -amin +10> wyszuka po minutach, <find -atime +10> wyszuka access time wiecej niż 10h
 
 ## 📁 4 –  przydatne skróty klawiszowe
 
