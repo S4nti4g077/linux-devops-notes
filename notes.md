@@ -74,7 +74,8 @@ typy komend:
 **find -size +5G** wyszuka plików > 5GB **find -user santi** - wyszuka plików po userze
 Wyszukiwanie przez **timestamp** - mtime (data modyfikacji - kiedy była zmiana w pliku) ctime (change time - kiedy była jakakolwiek zmiana - lokalizacji, nazwy itp) atime (access time - kiedy w jakikolwiek sposób plik był odczytany przez program lub komendą)
 <find -amin +10> wyszuka po minutach, <find -atime +10> wyszuka access time wiecej niż 10h
-
+można używać też -or ; -not (to samo co !) ; -and
+**find -name "*chick*" -or -name "*kitty*"
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
