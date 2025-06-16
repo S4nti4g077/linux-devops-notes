@@ -83,14 +83,15 @@ można używać też -or ; -not (to samo co !) ; -and
 **grep** - wyszukuje w pliku danego słowa **grep "chicken" animals.txt** -i (wielkość liter nieistotna) -w (wyszuka konkretnie słowa np "cat" a nie "catheter") **-r wyszka w plikach danej lokalizacji! bardzo użyteczne** -c (count - liczy ile jest podanych słow / liter / znaków)
 
 **Regex Grep** . - single character
-^ - start of a line
-$ - end of a line
+^ - start of a line (np zaczyna się "Ja,") 
+$ - end of a line (np kończy sie "?")
 [abc] - any character in the set
 [^abc] - any char NOT in set
 [A-Z] - characters in range
 * - repeat previous expression 0 or more times
 \- escape meta-characters
 
+**Piping to Grep** - używa się żeby np zobaczyć konkretne procesy (jest ich bardzo dużo, a chcemy znaleźć konkretne) np. ps -aux | grep "sound" -i ; albo do wyszukiwania w manualu np. man grep | grep "count" -i
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
