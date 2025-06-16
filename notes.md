@@ -79,6 +79,18 @@ można używać też -or ; -not (to samo co !) ; -and
 **-empty** wyszuka puste pliki
 
 **exec** - w połączeniu z find - wykonuje komende dla wszystkich znalezionych plikóW: **find -type -f -name "*.html" -exec cp '{}' '{}_COPY' ';'** {} - to aktualna nazwa, musi być w '{}' bo inaczej ma inne znaczenie. Ten zestaw używamy do przenoszenia albo usuwania wszystkich pustych plików, albo nieużywanych itp
+
+**grep** - wyszukuje w pliku danego słowa **grep "chicken" animals.txt** -i (wielkość liter nieistotna) -w (wyszuka konkretnie słowa np "cat" a nie "catheter") **-r wyszka w plikach danej lokalizacji! bardzo użyteczne** -c (count - liczy ile jest podanych słow / liter / znaków)
+
+**Regex Grep** . - single character
+^ - start of a line
+$ - end of a line
+[abc] - any character in the set
+[^abc] - any char NOT in set
+[A-Z] - characters in range
+* - repeat previous expression 0 or more times
+\- escape meta-characters
+
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
