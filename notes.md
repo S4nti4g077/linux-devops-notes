@@ -173,7 +173,11 @@ x - can be treated as a program (executed)
 '-' - cannot be read, executed, modified
 
 **chmod** - zmienia uprawnienia [chmod mode file]
-  u - user (owner) ; g - group ; o - (others = world) ; a - (all of the above)
-  '-' - removes permission ; + - grants permission ; = - sets a permission and removes others
 
+  u - user (owner) ; g - group ; o - (others = world) ; a - (all of the above)
+  
+  '-' - removes permission ; + - grants permission ; = - sets a permission and removes others
+  
   '-' r - read ; w - write ; x - execute
+
+- przykłady : chmod a-w file.txt - usunie write permissions od wszystkich użytkowników [rw-][rw-][r--] -> [r--][r--][r--]
