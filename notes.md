@@ -181,3 +181,6 @@ x - can be treated as a program (executed)
   '-' r - read ; w - write ; x - execute
 
 - przykłady : chmod a-w file.txt - usunie write permissions od wszystkich użytkowników [rw-][rw-][r--] -> [r--][r--][r--]
+
+**substitute user - zmiana usera** - su - santi - przełączy usera na santi
+
