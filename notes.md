@@ -182,5 +182,5 @@ x - can be treated as a program (executed)
 
 - przykłady : chmod a-w file.txt - usunie write permissions od wszystkich użytkowników [rw-][rw-][r--] -> [r--][r--][r--]
 
-**substitute user - zmiana usera** - su - santi - przełączy usera na santi
+**substitute user - zmiana usera** - su - santi - przełączy usera na santi 
 
