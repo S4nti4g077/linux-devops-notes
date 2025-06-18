@@ -176,4 +176,4 @@ x - can be treated as a program (executed)
   u - user (owner) ; g - group ; o - (others = world) ; a - (all of the above)
   '-' - removes permission ; + - grants permission ; = - sets a permission and removes others
 
-  - r - read ; w - write ; x - execute
+  '-' r - read ; w - write ; x - execute
