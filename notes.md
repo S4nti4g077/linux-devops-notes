@@ -92,6 +92,9 @@ $ - end of a line (np kończy sie "?")
 \- escape meta-characters
 
 **Piping to Grep** - używa się żeby np zobaczyć konkretne procesy (jest ich bardzo dużo, a chcemy znaleźć konkretne) np. ps -aux | grep "sound" -i ; albo do wyszukiwania w manualu np. man grep | grep "count" -i
+
+**chmod** - zmienia uprawnienia userów do plików
+
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
@@ -144,4 +147,29 @@ Ciekawy przykład: chcemy utworzyć ścieżkę folderów więc: **mkdir -p {mon,
 
 **touch {winter,spring,summer,fall}/{yard,house}/{todos.txt,done.txt}**
 
+## 📁 7 –  Typy plików i uprawnienia
 
+po ls -l wyskakuje log z plikami, przed nimi jest konfig uprawnień 10 znaków (1 typ pliku i 9 uprawnień) d[rwx][---][---] d[Owner][Group][World]
+pierwsze 3 (po typie pliku) - oznaczają co właściciel może z nimi zrobić ; kolejne 3 co może grupa z nim zrobić; a ostatnie - co wszyscy pozostali mogą zrobić
+1. typy plików
+- - regular file
+
+d - directory
+
+c - character special file 
+
+l - symbol ink
+
+b - blocked
+
+2. uprawnienia
+
+r - read permission
+
+w - write (can be modified)
+
+x - can be treated as a program (executed)
+
+- - cannot be read, executed, modified
+
+**chmod** - zmienia uprawnienia
