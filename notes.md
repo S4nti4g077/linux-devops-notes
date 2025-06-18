@@ -152,7 +152,7 @@ Ciekawy przykład: chcemy utworzyć ścieżkę folderów więc: **mkdir -p {mon,
 po ls -l wyskakuje log z plikami, przed nimi jest konfig uprawnień 10 znaków (1 typ pliku i 9 uprawnień) d[rwx][---][---] d[Owner][Group][World]
 pierwsze 3 (po typie pliku) - oznaczają co właściciel może z nimi zrobić ; kolejne 3 co może grupa z nim zrobić; a ostatnie - co wszyscy pozostali mogą zrobić
 1. typy plików
-- - regular file
+'-' - regular file
 
 d - directory
 
@@ -170,9 +170,10 @@ w - write (can be modified)
 
 x - can be treated as a program (executed)
 
-- - cannot be read, executed, modified
+'-' - cannot be read, executed, modified
 
 **chmod** - zmienia uprawnienia [chmod mode file]
   u - user (owner) ; g - group ; o - (others = world) ; a - (all of the above)
-  - - removes permission ; + - grants permission ; = - sets a permission and removes others
-  r - read ; w - write ; x - execute
+  '-' - removes permission ; + - grants permission ; = - sets a permission and removes others
+
+  - r - read ; w - write ; x - execute
