@@ -93,7 +93,7 @@ $ - end of a line (np kończy sie "?")
 
 **Piping to Grep** - używa się żeby np zobaczyć konkretne procesy (jest ich bardzo dużo, a chcemy znaleźć konkretne) np. ps -aux | grep "sound" -i ; albo do wyszukiwania w manualu np. man grep | grep "count" -i
 
-**chmod** - zmienia uprawnienia userów do plików
+**chmod** - zmienia uprawnienia userów do plików [dział 7]
 
 ## 📁 4 –  przydatne skróty klawiszowe
 
@@ -172,4 +172,7 @@ x - can be treated as a program (executed)
 
 - - cannot be read, executed, modified
 
-**chmod** - zmienia uprawnienia
+**chmod** - zmienia uprawnienia [chmod mode file]
+  u - user (owner) ; g - group ; o - (others = world) ; a - (all of the above)
+  - - removes permission ; + - grants permission ; = - sets a permission and removes others
+  r - read ; w - write ; x - execute
