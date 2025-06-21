@@ -95,6 +95,10 @@ $ - end of a line (np kończy sie "?")
 
 **chmod** - zmienia uprawnienia userów do plików [dział 7]
 
+**chown** - zmienia do kogo należy plik [dział 7]
+
+**printenv** - pokazuje środowisko dla aktualnego użytkownika
+
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
@@ -184,3 +188,6 @@ x - can be treated as a program (executed)
 
 **substitute user - zmiana usera** - su - santi - przełączy usera na santi 
 
+**chown** - zmiana właściciela albo grupy właścicieli pliku np. [chown bojak file.txt] , żeby zmienić grupe dodajemy ':' np [chown :grupaSanti file.txt] a grupe i właściciela tak [chown bojak:horses file.txt] - właścicielem bedzie bojak, a grupa horses - często przy tych komendach trzeba użyć SUDO
+
+**groups** - pokazuje w jakich grupach jest dany user **addgroup [groupname]** tworzy nową grupę; **adduser [user] [group]** dodaje usera do danej grupy
