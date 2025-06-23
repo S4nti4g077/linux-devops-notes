@@ -239,5 +239,7 @@ cron syntax: [a b c d e command]
 -d - month 1-12
 -e - day of week 0-6
 -'*' - any value
+- '5,6' - oznacza 5 i 6; 1-4 od 1 do 4; */5 co 5 np co 5 min będzie [*/5 * * * * comnd]
 np [30 * * * * command] - uruchomi komende co godzine o XX:30; [30 6 * * * comnd] - codziennie o 6:30 
-- https://crontab.guru/ 
+- https://crontab.guru/
+błędy warto przekierowywać do innego albo tego samego pliku, bo sie nigdzie nie wyświetlają 2> error.log
