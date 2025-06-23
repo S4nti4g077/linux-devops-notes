@@ -207,4 +207,14 @@ https://ezprompt.net/ - fajny ustawiacz terminala dla danego użytkownika - np c
 
 **alias** - komendy można skrócić za pomocą aliasów np [alias ..='cd ..'] przy wpisywaniu '..' zmieni lokalizację na "wstecz" - bo taki alias mu założyliśmy. Jak zapytamy o [type ..] - to wyrzuci, że '..' is aliased to 'cd ..'
 aliasy są zapisane tylko w naszej aktualnej sesji dlatego należy je zapisywać w ~./bashrc
+Przydatny przykład
+-alias pscpu10='ps auxf | sort -nr -k 3 | head -10' - zapisując taki alias, przy komendzie pscpu10 pokaże najbardziej zużywające pamięć procesy.
+warto używać aliasów bardziej doświadczonych programistów w skomplikowanych komendach, których często używamy.
+-warto zrobić osobny plik z aliasami a w pliku ~/.bashrc dajemy następujący zapis
+
+if [ -f ~/.bash_aliases ]; then
+.~/bash_aliases
+fi
+
+do tego tworzymy nowy plik .bash_aliases - i tam wrzucamy nasze aliasy
 
