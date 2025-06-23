@@ -205,3 +205,6 @@ export num=7 -> to w environment - 'printenv' pojawi sie taka zmienna (ale nie p
 PS1 w pliku /.bashrc ustawia konfiguracje promptu który się wyświetla w terminalu np: nazwa użytkownika + aktualna godzina, albo kolor, albo nawet kolor wpisywania.
 https://ezprompt.net/ - fajny ustawiacz terminala dla danego użytkownika - np czerwony terminal, pogrubione litery i kolor tekstu niebieski a w promptcie 'santi@: ' albo '12:34:23:' 
 
+**alias** - komendy można skrócić za pomocą aliasów np [alias ..='cd ..'] przy wpisywaniu '..' zmieni lokalizację na "wstecz" - bo taki alias mu założyliśmy. Jak zapytamy o [type ..] - to wyrzuci, że '..' is aliased to 'cd ..'
+aliasy są zapisane tylko w naszej aktualnej sesji dlatego należy je zapisywać w ~./bashrc
+
