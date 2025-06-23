@@ -223,3 +223,8 @@ do tego tworzymy nowy plik .bash_aliases - i tam wrzucamy nasze aliasy
 **'#!/bin/bash'** - pierwsza linia skryptu 
 'bash [skrypt]' - uruchomi skrypt 
 
+**echo $PATH** - PATH zawiera lokalizację komend (wyświetli np /usr/local/sbin:usr/local/bin...) prześwietla wszystkie te loklizacje w przypadku użycia komendy - po prostu ją wyszuka po kolei w folderach podanych w path
+
+Jeśli chcemy używać komendy w całym urządzeniu to musi być w jednej z tych lokalizacji, a jeśli stworzymy skrypt który chcemy tylko dla nas (1 użytkownik) to musimy dodać lokalizację do PATH
+**dodajemy ~/bin -> tu wrzucamy nasze skrypty** niektóre shelle mają wbudowaną funkcję, że automatycznie doda tą lokalizację do $PATH, a inne niekoniecznie więc **w pliku ./bashrc dodajemy linię <PATH="$HOME/bin:$PATH">** 
+ale nie nie mamy praw do uruchomienia takiego skryptu więc nadajemy prawa: **chmod a+x [plik]**
