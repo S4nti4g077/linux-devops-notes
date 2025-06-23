@@ -191,3 +191,17 @@ x - can be treated as a program (executed)
 **chown** - zmiana właściciela albo grupy właścicieli pliku np. [chown bojak file.txt] , żeby zmienić grupe dodajemy ':' np [chown :grupaSanti file.txt] a grupe i właściciela tak [chown bojak:horses file.txt] - właścicielem bedzie bojak, a grupa horses - często przy tych komendach trzeba użyć SUDO
 
 **groups** - pokazuje w jakich grupach jest dany user **addgroup [groupname]** tworzy nową grupę; **adduser [user] [group]** dodaje usera do danej grupy
+
+## 📁 7 –  Environment
+
+num=7 - ta zmienna zostanie nadana tylko w danej sesji terminala
+
+export num=7 -> to w environment - 'printenv' pojawi sie taka zmienna (ale nie pojawi się w nowo otwartych terminalach)
+
+**startup files** 
+ -etc/bash.bashrc - config dla wszsystkich userów
+ -~/.bashrc - ustawienia dla danego usera (własna konfiguracja)
+
+PS1 w pliku /.bashrc ustawia konfiguracje promptu który się wyświetla w terminalu np: nazwa użytkownika + aktualna godzina, albo kolor, albo nawet kolor wpisywania.
+https://ezprompt.net/ - fajny ustawiacz terminala dla danego użytkownika - np czerwony terminal, pogrubione litery i kolor tekstu niebieski a w promptcie 'santi@: ' albo '12:34:23:' 
+
