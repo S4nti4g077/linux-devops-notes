@@ -230,3 +230,14 @@ do tego tworzymy nowy plik .bash_aliases - i tam wrzucamy nasze aliasy
 Jeśli chcemy używać komendy w całym urządzeniu to musi być w jednej z tych lokalizacji, a jeśli stworzymy skrypt który chcemy tylko dla nas (1 użytkownik) to musimy dodać lokalizację do PATH
 **dodajemy ~/bin -> tu wrzucamy nasze skrypty** niektóre shelle mają wbudowaną funkcję, że automatycznie doda tą lokalizację do $PATH, a inne niekoniecznie więc **w pliku ./bashrc dodajemy linię <PATH="$HOME/bin:$PATH">** 
 ale nie nie mamy praw do uruchomienia takiego skryptu więc nadajemy prawa: **chmod a+x [plik]**
+
+**cron** - [crontab] - ustawia godzine albo cykliczność wykonywania danej komendy / skryptu np codziennie o 8:00
+cron syntax: [a b c d e command]
+-a - minute 0-59
+-b - hour 0-23
+-c - day 1-31
+-d - month 1-12
+-e - day of week 0-6
+-'*' - any value
+np [30 * * * * command] - uruchomi komende co godzine o XX:30; [30 6 * * * comnd] - codziennie o 6:30 
+- https://crontab.guru/ 
