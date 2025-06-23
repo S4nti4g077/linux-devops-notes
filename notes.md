@@ -99,6 +99,8 @@ $ - end of a line (np kończy sie "?")
 
 **printenv** - pokazuje środowisko dla aktualnego użytkownika
 
+**curl** - nie zawsze zainstalowane,
+
 ## 📁 4 –  przydatne skróty klawiszowe
 
 **ctrl-L** - clear - czyści terminal
@@ -220,7 +222,7 @@ do tego tworzymy nowy plik .bash_aliases - i tam wrzucamy nasze aliasy
 
 ## 📁 8 - Basics of scripts
 
-**'#!/bin/bash'** - pierwsza linia skryptu 
+**'#!/bin/bash'** - pierwsza linia skryptu, a jeśli używamy skryptu napisanego w python itp to instalujemy py i w skrypcie zawsze **#!/usr/bin/python3**
 'bash [skrypt]' - uruchomi skrypt 
 
 **echo $PATH** - PATH zawiera lokalizację komend (wyświetli np /usr/local/sbin:usr/local/bin...) prześwietla wszystkie te loklizacje w przypadku użycia komendy - po prostu ją wyszuka po kolei w folderach podanych w path
