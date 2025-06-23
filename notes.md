@@ -218,3 +218,8 @@ fi
 
 do tego tworzymy nowy plik .bash_aliases - i tam wrzucamy nasze aliasy
 
+## 📁 8 - Basics of scripts
+
+**'#!/bin/bash'** - pierwsza linia skryptu 
+'bash [skrypt]' - uruchomi skrypt 
+
